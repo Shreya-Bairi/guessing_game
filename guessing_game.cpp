@@ -149,4 +149,7 @@ int main()
         exit(0);
     } 
     
+    else {
+        cout << "Please enter a valid number."<< endl;
+    }
 }

@@ -67,5 +67,83 @@ int main()
         }
     }
     
+    //MEDIUM
+    else if (difficulty == 2)
+    {
+        cout << "You have 7 chances to find the secret number between 1 and 100.";
+        int chancesleft;
+        chancesleft = 7;
+
+        for (int i=0; i < 8; i++)
+        {
+            cout << "\nEnter a number: ";
+            cin >> guess;
+            
+            if (guess == secretnumber) {
+                cout << "Well Done! You Won! " << guess << " is the secret number" << endl;
+                break;
+            }
+            else {
+                cout << "You guessed it wrong.\n";
+                if (guess > secretnumber)
+                {
+                    cout << "Guess lower!\n";
+                }
+                else 
+                {
+                    cout << "Guess higher!\n";
+                }
+                chancesleft--;
+                cout << chancesleft << " chances left" << endl;
+                if (chancesleft == 0)
+                {
+                    cout << "You are out of chances!";
+                    cout << "\nThe secret number is " << secretnumber<< endl;
+                    cout <<"\nBetter luck next time!" << endl;
+                    break;
+                }
+            }
+        }
+    }
+    
+    //HARD
+    else if (difficulty == 3)
+    {
+        cout << "You have 5 chances to find the secret number between 1 and 100.";
+        int chancesleft;
+        chancesleft = 5;
+
+        for (int i=0; i < 6; i++)
+        {
+            cout << "\nEnter a number: ";
+            cin >> guess;
+            
+            if (guess == secretnumber) {
+                cout << "Well Done! You Won! " << guess << " is the secret number" << endl;
+                break;
+            }
+            else {
+                cout << "You guessed it wrong.\n";
+                if (guess > secretnumber)
+                {
+                    cout << "Guess lower!\n";
+                }
+                else 
+                {
+                    cout << "Guess higher!\n";
+                }
+                chancesleft--;
+                cout << chancesleft << " chances left" << endl;
+                if (chancesleft == 0)
+                {
+                    cout << "You are out of chances!";
+                    cout << "\nThe secret number is " << secretnumber<< endl;
+                    cout <<"\nBetter luck next time!" << endl;
+                    break;
+                }
+            }
+        }
+    }
+    
     
 }

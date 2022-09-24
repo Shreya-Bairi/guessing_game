@@ -39,7 +39,11 @@ int main()
         {
             cout << "\nEnter a number: ";
             cin >> guess;
-          
+            if (guess == 0)
+            {
+                cout << "Sorry to see you go!";
+                break;
+            }
             if (guess == secretnumber) {
                 cout << "Well Done! You Won! " << guess << " is the secret number" << endl;
                 break;
@@ -78,7 +82,11 @@ int main()
         {
             cout << "\nEnter a number: ";
             cin >> guess;
-            
+            if (guess == 0)
+            {
+                cout << "Sorry to see you go!";
+                break;
+            }
             if (guess == secretnumber) {
                 cout << "Well Done! You Won! " << guess << " is the secret number" << endl;
                 break;
@@ -117,7 +125,11 @@ int main()
         {
             cout << "\nEnter a number: ";
             cin >> guess;
-            
+            if (guess == 0)
+            {
+                cout << "Sorry to see you go!";
+                break;
+            }
             if (guess == secretnumber) {
                 cout << "Well Done! You Won! " << guess << " is the secret number" << endl;
                 break;

@@ -144,6 +144,9 @@ int main()
             }
         }
     }
-    
+    else if (difficulty == 0)
+    {
+        exit(0);
+    } 
     
 }

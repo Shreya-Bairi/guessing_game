@@ -27,10 +27,11 @@ int main()
     secretnumber = (rand() % (100-1)+1);
     int guess;
     
-    
-    //EASY
-    if (difficulty == 1)
+    //trying swith
+    switch (difficulty)
     {
+    case 1:
+        /* code */
         cout << "You have 10 chances to find the secret number between 1 and 100.";
         int chancesleft;
         chancesleft = 10;
@@ -69,13 +70,10 @@ int main()
                 }
             }
         }
-    }
+        break;
     
-    //MEDIUM
-    else if (difficulty == 2)
-    {
+    case 2:
         cout << "You have 7 chances to find the secret number between 1 and 100.";
-        int chancesleft;
         chancesleft = 7;
 
         for (int i=0; i < 8; i++)
@@ -112,13 +110,10 @@ int main()
                 }
             }
         }
-    }
-    
-    //HARD
-    else if (difficulty == 3)
-    {
+        break;
+
+    case 3:
         cout << "You have 5 chances to find the secret number between 1 and 100.";
-        int chancesleft;
         chancesleft = 5;
 
         for (int i=0; i < 6; i++)
@@ -155,7 +150,13 @@ int main()
                 }
             }
         }
+        break;
+
+    default:
+        exit(0);
+        break;
     }
+    
     else if (difficulty == 0)
     {
         exit(0);
